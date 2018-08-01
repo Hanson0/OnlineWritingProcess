@@ -66,6 +66,7 @@
             this.textFail = new DevExpress.XtraEditors.TextEdit();
             this.textPass = new DevExpress.XtraEditors.TextEdit();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::OnlineWritingProcess.AllForms.WaitForm1), true, true);
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.checkSkipSys.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkSkipCal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkReset.Properties)).BeginInit();
@@ -82,6 +83,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textPass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -89,7 +92,7 @@
             this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl1.LineVisible = true;
-            this.labelControl1.Location = new System.Drawing.Point(59, 23);
+            this.labelControl1.Location = new System.Drawing.Point(59, 18);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(168, 36);
             this.labelControl1.TabIndex = 2;
@@ -149,7 +152,7 @@
             // 
             this.btnSearchDev.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchDev.Appearance.Options.UseFont = true;
-            this.btnSearchDev.Location = new System.Drawing.Point(59, 74);
+            this.btnSearchDev.Location = new System.Drawing.Point(59, 71);
             this.btnSearchDev.Name = "btnSearchDev";
             this.btnSearchDev.Size = new System.Drawing.Size(102, 30);
             this.btnSearchDev.TabIndex = 12;
@@ -177,7 +180,7 @@
             // 
             this.btnProductMode.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductMode.Appearance.Options.UseFont = true;
-            this.btnProductMode.Location = new System.Drawing.Point(190, 74);
+            this.btnProductMode.Location = new System.Drawing.Point(190, 71);
             this.btnProductMode.Name = "btnProductMode";
             this.btnProductMode.Size = new System.Drawing.Size(102, 30);
             this.btnProductMode.TabIndex = 17;
@@ -263,11 +266,11 @@
             this.textMac.Border.Class = "TextBoxBorder";
             this.textMac.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textMac.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMac.Location = new System.Drawing.Point(157, 119);
+            this.textMac.Location = new System.Drawing.Point(108, 10);
             this.textMac.Multiline = true;
             this.textMac.Name = "textMac";
             this.textMac.PreventEnterBeep = true;
-            this.textMac.Size = new System.Drawing.Size(340, 38);
+            this.textMac.Size = new System.Drawing.Size(330, 38);
             this.textMac.TabIndex = 26;
             this.textMac.TextChanged += new System.EventHandler(this.textMac_TextChanged);
             // 
@@ -275,7 +278,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelControl8.Location = new System.Drawing.Point(59, 123);
+            this.labelControl8.Location = new System.Drawing.Point(10, 14);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(80, 31);
             this.labelControl8.TabIndex = 27;
@@ -301,7 +304,7 @@
             this.listDevices.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listDevices.FormattingEnabled = true;
             this.listDevices.ItemHeight = 22;
-            this.listDevices.Location = new System.Drawing.Point(5, 4);
+            this.listDevices.Location = new System.Drawing.Point(5, 3);
             this.listDevices.Name = "listDevices";
             this.listDevices.Size = new System.Drawing.Size(433, 92);
             this.listDevices.TabIndex = 34;
@@ -312,9 +315,8 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(733, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 18);
+            this.label3.Size = new System.Drawing.Size(0, 18);
             this.label3.TabIndex = 128;
-            this.label3.Text = "label3";
             // 
             // label2
             // 
@@ -322,9 +324,8 @@
             this.label2.Location = new System.Drawing.Point(562, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
+            this.label2.Size = new System.Drawing.Size(0, 18);
             this.label2.TabIndex = 127;
-            this.label2.Text = "label2";
             // 
             // label1
             // 
@@ -497,13 +498,21 @@
             // 
             this.splashScreenManager1.ClosingDelay = 500;
             // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.textMac);
+            this.panelControl4.Controls.Add(this.labelControl8);
+            this.panelControl4.Location = new System.Drawing.Point(59, 112);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(857, 55);
+            this.panelControl4.TabIndex = 126;
+            // 
             // AutoWriteProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 702);
-            this.Controls.Add(this.textMac);
-            this.Controls.Add(this.labelControl8);
+            this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.textLog);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.panelControl2);
@@ -533,6 +542,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textPass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            this.panelControl4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -577,6 +589,7 @@
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
 
     }
 }

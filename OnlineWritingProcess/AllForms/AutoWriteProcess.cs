@@ -68,6 +68,9 @@ namespace OnlineWritingProcess
         private System.Windows.Forms.ProgressBar selectProgressBar;
         private PictureBox selectPictureBox;
         private string comValue;
+        private string strIp;
+        private string macUrl = "http://{0}:7778/haier_ge/download?mac={1}";
+
         enum readCmd
         {
             ReadCmd,
@@ -133,15 +136,15 @@ namespace OnlineWritingProcess
 
             //HTTP
             #region
-            //Win32API.GetPrivateProfileString("Http", "IP", "", tempStringBuilder, 256, strCurrentDirectory);
-            //if (tempStringBuilder.ToString() == "")
-            //{
-            //    Win32API.WritePrivateProfileString("Http", "IP", "192.168.1.25", strCurrentDirectory);
-            //}
-            //else
-            //{
-            //    HttpServer.Ip = tempStringBuilder.ToString();
-            //}
+            Win32API.GetPrivateProfileString("Http", "IP", "", tempStringBuilder, 256, configPath);
+            if (tempStringBuilder.ToString() == "")
+            {
+                Win32API.WritePrivateProfileString("Http", "IP", "10.42.1.4", configPath);
+            }
+            else
+            {
+                strIp = tempStringBuilder.ToString();
+            }
 
             //Win32API.GetPrivateProfileString("Http", "Port", "", tempStringBuilder, 256, strCurrentDirectory);
             //if (tempStringBuilder.ToString() == "")
@@ -859,7 +862,7 @@ namespace OnlineWritingProcess
                     //根据MAC号,下载bin文件
                     //string urlDownload = url+textMac.Text;
                     string binPath;
-                    bool result = update("http://down10.zol.com.cn/xiazai/utorrentv3.5.0.44246.b.zip", strBinPath, out binPath);
+                    bool result = update(string.Format(macUrl,strIp,textMac.Text) , strBinPath, out binPath);//"http://down10.zol.com.cn/xiazai/utorrentv3.5.0.44246.b.zip"
                     if (!result)
                     {
                         PutResult(false, "bin文件下载失败");
@@ -867,7 +870,7 @@ namespace OnlineWritingProcess
                     }
                     //设置bin文件路径
                     //string binPath=strBinPath+fileName+
-                    Ret = SendCmd((int)readCmd.WriteCmd, FirmwarePathSet, "FIRMWARE", out deviceList, false, @"C:\Users\ZJH\Desktop\237669683672908_D828C911B74C.bin");//binPath
+                    Ret = SendCmd((int)readCmd.WriteCmd, FirmwarePathSet, "FIRMWARE", out deviceList, false, binPath);// @"C:\Users\ZJH\Desktop\237669683672908_D828C911B74C.bin"
                     if (Ret != 0)
                     {
                         PutResult(false, "MAC:" + textMac.Text + "  cmd获取bin文件路径失败");
