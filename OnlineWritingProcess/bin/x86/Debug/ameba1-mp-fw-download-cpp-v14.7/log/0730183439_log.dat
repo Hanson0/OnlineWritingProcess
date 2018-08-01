@@ -1,0 +1,8 @@
+﻿2018/7/30 18:34:39 : Scan Device Start
+2018/7/30 18:34:39 : COM37scan: MBED serial found
+2018/7/30 18:34:40 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/30 18:34:40 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/30 18:34:40 : Scan Device End
+2018/7/30 18:34:40 : User click fiwmware download
+2018/7/30 18:34:40 : COM37 download start
+2018/7/30 18:34:40 : COM37 download fail: 3

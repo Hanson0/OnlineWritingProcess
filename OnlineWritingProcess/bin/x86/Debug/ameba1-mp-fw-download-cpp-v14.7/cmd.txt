@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\ameba1-mp-fw-download-cpp-v14.7>SerialDownloader_
+cpp.exe -download -set skipsys True -set skipcal True -set uartset 2 -set Compos
+ite_Boot_App_HaierAC_Prod_v0_0_6_30.bin C:\Users\Administrator\Desktop\ameba1-mp
+-fw-download-cpp-v14.7 -set userdataoffset 0x0000

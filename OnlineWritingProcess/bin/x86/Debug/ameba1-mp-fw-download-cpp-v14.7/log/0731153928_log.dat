@@ -1,0 +1,39 @@
+﻿2018/7/31 15:39:28 : Scan Device Start
+2018/7/31 15:39:28 : COM37scan: MBED serial found
+2018/7/31 15:39:28 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/31 15:39:28 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:39:28 : Scan Device End
+2018/7/31 15:39:53 : User click fiwmware download
+2018/7/31 15:39:53 : COM37 download start
+2018/7/31 15:39:53 : COM37 Cannot find CPUID
+2018/7/31 15:39:53 : COM37 success cnt 0 fail cnt 1
+2018/7/31 15:40:14 : >>>User click Scan device
+2018/7/31 15:40:14 : Scan Device Start
+2018/7/31 15:40:15 : COM37scan: MBED serial found
+2018/7/31 15:40:15 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/31 15:40:15 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:40:15 : Scan Device End
+2018/7/31 15:40:17 : User click fiwmware download
+2018/7/31 15:40:17 : COM37 download start
+2018/7/31 15:40:17 : COM37 CPU detected
+2018/7/31 15:40:18 : COM37 Boot OK
+2018/7/31 15:40:18 : COM37 Firmware read done
+2018/7/31 15:40:18 : COM37 Vendoer command ok
+2018/7/31 15:40:18 : COM37 Xmodem return
+2018/7/31 15:40:18 : COM37 worker: no sync, retry fail
+2018/7/31 15:40:18 : COM37 success cnt 0 fail cnt 1
+2018/7/31 15:40:28 : USB Disk removed
+2018/7/31 15:40:29 : Scan Device Start
+2018/7/31 15:40:29 : COM37scan: MBED serial found
+2018/7/31 15:40:29 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/31 15:40:29 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:40:30 : Scan Device End
+2018/7/31 15:40:50 : User click fiwmware download
+2018/7/31 15:40:50 : COM37 download start
+2018/7/31 15:40:50 : COM37 CPU detected
+2018/7/31 15:40:52 : COM37 Boot OK
+2018/7/31 15:40:52 : COM37 Firmware read done
+2018/7/31 15:40:52 : COM37 Vendoer command ok
+2018/7/31 15:41:23 : COM37 Xmodem return
+2018/7/31 15:41:23 : COM37 worker: success
+2018/7/31 15:41:24 : COM37 success cnt 1 fail cnt 0

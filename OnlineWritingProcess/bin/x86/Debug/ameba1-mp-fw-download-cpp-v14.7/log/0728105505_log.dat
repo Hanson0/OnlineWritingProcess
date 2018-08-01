@@ -1,0 +1,8 @@
+﻿2018/7/28 10:55:05 : Scan Device Start
+2018/7/28 10:55:05 : COM34scan: MBED serial found
+2018/7/28 10:55:05 : COM34scan: IO exception, 对端口“COM34”的访问被拒绝。
+2018/7/28 10:55:06 : COM34scan: IO exception, 对端口“COM34”的访问被拒绝。
+2018/7/28 10:55:06 : COM34scan: IO exception, 对端口“COM34”的访问被拒绝。
+2018/7/28 10:55:07 : Scanned: mbed Serial Port (COM34) v0.00 ID:--
+2018/7/28 10:55:07 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:55:07 : Scan Device End

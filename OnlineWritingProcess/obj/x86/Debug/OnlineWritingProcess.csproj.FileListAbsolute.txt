@@ -1,0 +1,12 @@
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\bin\x86\Debug\OnlineWritingProcess.exe
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\bin\x86\Debug\OnlineWritingProcess.pdb
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.AutoWriteProcess.resources
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.MainForm.resources
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.Properties.Resources.resources
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.csproj.GenerateResource.Cache
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.exe.licenses
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.exe
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.pdb
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.AllForms.Login.resources
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.AllForms.WaitForm1.resources
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\obj\x86\Debug\OnlineWritingProcess.csprojResolveAssemblyReference.cache

@@ -1,0 +1,102 @@
+﻿2018/7/26 12:09:35 : Scan Device Start
+2018/7/26 12:09:35 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:09:35 : Scan Device End
+2018/7/26 12:14:41 : USB Disk inserted
+2018/7/26 12:14:41 : USB Disk inserted
+2018/7/26 12:14:41 : USB Disk inserted
+2018/7/26 12:14:41 : USB Disk inserted
+2018/7/26 12:14:42 : Scan Device Start
+2018/7/26 12:14:42 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:14:42 : COM31scan: MBED serial found
+2018/7/26 12:14:43 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/26 12:14:43 : Scan Device End
+2018/7/26 12:20:33 : USB Disk removed
+2018/7/26 12:20:33 : USB Disk removed
+2018/7/26 12:20:34 : Scan Device Start
+2018/7/26 12:20:34 : exception: discard buffer, 端口被关闭。
+2018/7/26 12:20:34 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:20:34 : COM31scan: MBED serial found
+2018/7/26 12:20:34 : COM31scan: IO exception, 端口“COM31”不存在。
+2018/7/26 12:20:34 : COM31scan: IO exception, 端口“COM31”不存在。
+2018/7/26 12:20:35 : COM31scan: IO exception, 端口“COM31”不存在。
+2018/7/26 12:20:35 : Scanned: mbed Serial Port (COM31) v0.00 ID:--
+2018/7/26 12:20:36 : Scan Device End
+2018/7/26 12:20:36 : USB Disk removed
+2018/7/26 12:20:36 : USB Disk removed
+2018/7/26 12:20:37 : Scan Device Start
+2018/7/26 12:20:37 : exception: discard buffer, 端口被关闭。
+2018/7/26 12:20:37 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:20:37 : Scan Device End
+2018/7/26 12:20:39 : USB Disk inserted
+2018/7/26 12:20:40 : Scan Device Start
+2018/7/26 12:20:40 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:20:40 : COM31scan: MBED serial found
+2018/7/26 12:20:40 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/26 12:20:40 : Scan Device End
+2018/7/26 12:20:42 : USB Disk inserted
+2018/7/26 12:20:42 : USB Disk inserted
+2018/7/26 12:20:42 : USB Disk inserted
+2018/7/26 12:20:43 : Scan Device Start
+2018/7/26 12:20:43 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:20:43 : COM31scan: MBED serial found
+2018/7/26 12:20:43 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/26 12:20:43 : Scan Device End
+2018/7/26 12:21:15 : USB Disk removed
+2018/7/26 12:21:15 : USB Disk removed
+2018/7/26 12:21:16 : Scan Device Start
+2018/7/26 12:21:16 : exception: discard buffer, 端口被关闭。
+2018/7/26 12:21:16 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:21:16 : Scan Device End
+2018/7/26 12:21:18 : USB Disk removed
+2018/7/26 12:21:18 : USB Disk removed
+2018/7/26 12:21:19 : Scan Device Start
+2018/7/26 12:21:19 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:21:19 : Scan Device End
+2018/7/26 12:39:16 : USB Disk inserted
+2018/7/26 12:39:16 : USB Disk inserted
+2018/7/26 12:39:16 : USB Disk inserted
+2018/7/26 12:39:16 : USB Disk inserted
+2018/7/26 12:39:17 : Scan Device Start
+2018/7/26 12:39:17 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:39:18 : COM31scan: MBED serial found
+2018/7/26 12:39:18 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/26 12:39:18 : Scan Device End
+2018/7/26 12:41:01 : USB Disk removed
+2018/7/26 12:41:01 : USB Disk removed
+2018/7/26 12:41:02 : Scan Device Start
+2018/7/26 12:41:02 : exception: discard buffer, 端口被关闭。
+2018/7/26 12:41:03 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:41:03 : Scan Device End
+2018/7/26 12:41:04 : USB Disk inserted
+2018/7/26 12:41:04 : USB Disk inserted
+2018/7/26 12:41:05 : Scan Device Start
+2018/7/26 12:41:06 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:41:06 : COM31scan: MBED serial found
+2018/7/26 12:41:06 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/26 12:41:06 : Scan Device End
+2018/7/26 12:41:07 : USB Disk removed
+2018/7/26 12:41:07 : USB Disk removed
+2018/7/26 12:41:08 : Scan Device Start
+2018/7/26 12:41:08 : exception: discard buffer, 端口被关闭。
+2018/7/26 12:41:09 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:41:09 : COM31scan: MBED serial found
+2018/7/26 12:41:09 : COM31scan: IO exception, 端口“COM31”不存在。
+2018/7/26 12:41:09 : COM31scan: IO exception, 端口“COM31”不存在。
+2018/7/26 12:41:10 : COM31scan: IO exception, 端口“COM31”不存在。
+2018/7/26 12:41:10 : Scanned: mbed Serial Port (COM31) v0.00 ID:--
+2018/7/26 12:41:10 : Scan Device End
+2018/7/26 12:41:10 : USB Disk removed
+2018/7/26 12:41:10 : USB Disk removed
+2018/7/26 12:41:11 : Scan Device Start
+2018/7/26 12:41:11 : exception: discard buffer, 端口被关闭。
+2018/7/26 12:41:12 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:41:12 : Scan Device End
+2018/7/26 12:41:16 : USB Disk inserted
+2018/7/26 12:41:16 : USB Disk inserted
+2018/7/26 12:41:16 : USB Disk inserted
+2018/7/26 12:41:16 : USB Disk inserted
+2018/7/26 12:41:17 : Scan Device Start
+2018/7/26 12:41:18 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/26 12:41:18 : COM31scan: MBED serial found
+2018/7/26 12:41:18 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/26 12:41:18 : Scan Device End

@@ -1,0 +1,221 @@
+﻿2018/7/28 10:01:52 : Scan Device Start
+2018/7/28 10:01:52 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:01:52 : Scan Device End
+2018/7/28 10:02:13 : USB Disk inserted
+2018/7/28 10:02:13 : USB Disk inserted
+2018/7/28 10:02:13 : USB Disk inserted
+2018/7/28 10:02:13 : USB Disk inserted
+2018/7/28 10:02:14 : Scan Device Start
+2018/7/28 10:02:14 : COM34scan: MBED serial found
+2018/7/28 10:02:14 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:02:14 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:02:14 : Scan Device End
+2018/7/28 10:02:20 : User click fiwmware download
+2018/7/28 10:02:20 : COM34 download start
+2018/7/28 10:02:20 : COM34 CPU detected
+2018/7/28 10:02:21 : COM34 Boot OK
+2018/7/28 10:02:21 : COM34 Firmware read done
+2018/7/28 10:02:21 : COM34 Vendoer command ok
+2018/7/28 10:03:03 : COM34 Xmodem return
+2018/7/28 10:03:04 : COM34 worker: success
+2018/7/28 10:03:04 : COM34 success cnt 1 fail cnt 0
+2018/7/28 10:03:30 : User click fiwmware download
+2018/7/28 10:03:30 : COM34 download start
+2018/7/28 10:03:30 : COM34 CPU detected
+2018/7/28 10:03:32 : COM34 Boot OK
+2018/7/28 10:03:32 : COM34 Firmware read done
+2018/7/28 10:03:32 : COM34 Vendoer command ok
+2018/7/28 10:03:37 : exception: download fail, 操作已超时。
+2018/7/28 10:03:37 : COM34 worker: UART IO exception
+2018/7/28 10:03:37 : COM34 success cnt 1 fail cnt 1
+2018/7/28 10:04:07 : USB Disk inserted
+2018/7/28 10:04:08 : Scan Device Start
+2018/7/28 10:04:09 : COM34scan: MBED serial found
+2018/7/28 10:04:09 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:09 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:09 : Scan Device End
+2018/7/28 10:04:13 : USB Disk removed
+2018/7/28 10:04:13 : USB Disk removed
+2018/7/28 10:04:14 : Scan Device Start
+2018/7/28 10:04:14 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:04:15 : COM34scan: MBED serial found
+2018/7/28 10:04:15 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:15 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:15 : Scan Device End
+2018/7/28 10:04:16 : USB Disk inserted
+2018/7/28 10:04:16 : USB Disk inserted
+2018/7/28 10:04:17 : Scan Device Start
+2018/7/28 10:04:18 : COM34scan: MBED serial found
+2018/7/28 10:04:18 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:18 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:18 : Scan Device End
+2018/7/28 10:04:25 : USB Disk removed
+2018/7/28 10:04:25 : USB Disk removed
+2018/7/28 10:04:26 : Scan Device Start
+2018/7/28 10:04:26 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:04:27 : COM34scan: MBED serial found
+2018/7/28 10:04:27 : COM34scan: IO exception, 端口“COM34”不存在。
+2018/7/28 10:04:27 : COM34scan: IO exception, 端口“COM34”不存在。
+2018/7/28 10:04:28 : COM34scan: IO exception, 端口“COM34”不存在。
+2018/7/28 10:04:28 : Scanned: mbed Serial Port (COM34) v0.00 ID:--
+2018/7/28 10:04:28 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:28 : Scan Device End
+2018/7/28 10:04:28 : USB Disk inserted
+2018/7/28 10:04:28 : USB Disk inserted
+2018/7/28 10:04:29 : Scan Device Start
+2018/7/28 10:04:29 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:04:30 : COM34scan: MBED serial found
+2018/7/28 10:04:30 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:30 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:30 : Scan Device End
+2018/7/28 10:04:41 : USB Disk removed
+2018/7/28 10:04:41 : USB Disk removed
+2018/7/28 10:04:42 : Scan Device Start
+2018/7/28 10:04:42 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:04:42 : COM34scan: MBED serial found
+2018/7/28 10:04:42 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:42 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:42 : Scan Device End
+2018/7/28 10:04:44 : USB Disk inserted
+2018/7/28 10:04:44 : USB Disk inserted
+2018/7/28 10:04:45 : Scan Device Start
+2018/7/28 10:04:45 : COM34scan: MBED serial found
+2018/7/28 10:04:45 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:45 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:45 : Scan Device End
+2018/7/28 10:04:53 : USB Disk removed
+2018/7/28 10:04:53 : USB Disk removed
+2018/7/28 10:04:54 : Scan Device Start
+2018/7/28 10:04:54 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:04:54 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:54 : Scan Device End
+2018/7/28 10:04:56 : USB Disk inserted
+2018/7/28 10:04:56 : USB Disk inserted
+2018/7/28 10:04:57 : Scan Device Start
+2018/7/28 10:04:57 : COM34scan: MBED serial found
+2018/7/28 10:04:57 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:04:57 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:04:57 : Scan Device End
+2018/7/28 10:05:02 : USB Disk removed
+2018/7/28 10:05:02 : USB Disk removed
+2018/7/28 10:05:03 : Scan Device Start
+2018/7/28 10:05:03 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:05:03 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:05:03 : Scan Device End
+2018/7/28 10:05:05 : USB Disk inserted
+2018/7/28 10:05:05 : USB Disk inserted
+2018/7/28 10:05:06 : Scan Device Start
+2018/7/28 10:05:06 : COM34scan: MBED serial found
+2018/7/28 10:05:06 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:05:06 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:05:06 : Scan Device End
+2018/7/28 10:05:11 : USB Disk removed
+2018/7/28 10:05:11 : USB Disk removed
+2018/7/28 10:05:12 : Scan Device Start
+2018/7/28 10:05:12 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:05:12 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:05:12 : Scan Device End
+2018/7/28 10:05:14 : USB Disk removed
+2018/7/28 10:05:14 : USB Disk removed
+2018/7/28 10:05:15 : Scan Device Start
+2018/7/28 10:05:15 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:05:15 : Scan Device End
+2018/7/28 10:06:29 : USB Disk removed
+2018/7/28 10:06:30 : Scan Device Start
+2018/7/28 10:06:30 : COM34scan: MBED serial found
+2018/7/28 10:06:30 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:06:30 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:06:30 : Scan Device End
+2018/7/28 10:06:32 : USB Disk inserted
+2018/7/28 10:06:32 : USB Disk inserted
+2018/7/28 10:06:32 : USB Disk inserted
+2018/7/28 10:06:32 : USB Disk inserted
+2018/7/28 10:06:33 : Scan Device Start
+2018/7/28 10:06:33 : COM34scan: MBED serial found
+2018/7/28 10:06:33 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:06:33 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:06:33 : Scan Device End
+2018/7/28 10:06:53 : User click fiwmware download
+2018/7/28 10:06:53 : COM34 download start
+2018/7/28 10:06:53 : COM34 CPU detected
+2018/7/28 10:06:55 : COM34 Boot OK
+2018/7/28 10:06:55 : COM34 Firmware read done
+2018/7/28 10:06:55 : COM34 Vendoer command ok
+2018/7/28 10:07:36 : COM34 Xmodem return
+2018/7/28 10:07:37 : COM34 worker: success
+2018/7/28 10:07:37 : COM34 success cnt 1 fail cnt 0
+2018/7/28 10:07:59 : USB Disk inserted
+2018/7/28 10:08:00 : Scan Device Start
+2018/7/28 10:08:00 : COM34scan: MBED serial found
+2018/7/28 10:08:00 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:08:00 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:08:00 : Scan Device End
+2018/7/28 10:08:02 : USB Disk removed
+2018/7/28 10:08:02 : USB Disk removed
+2018/7/28 10:08:03 : Scan Device Start
+2018/7/28 10:08:03 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:08:03 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:08:03 : Scan Device End
+2018/7/28 10:08:05 : USB Disk inserted
+2018/7/28 10:08:05 : USB Disk inserted
+2018/7/28 10:08:06 : Scan Device Start
+2018/7/28 10:08:06 : COM34scan: MBED serial found
+2018/7/28 10:08:06 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:08:06 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:08:06 : Scan Device End
+2018/7/28 10:08:26 : USB Disk removed
+2018/7/28 10:08:26 : USB Disk removed
+2018/7/28 10:08:27 : Scan Device Start
+2018/7/28 10:08:27 : exception: discard buffer, 端口被关闭。
+2018/7/28 10:08:27 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:08:27 : Scan Device End
+2018/7/28 10:08:29 : USB Disk inserted
+2018/7/28 10:08:29 : USB Disk inserted
+2018/7/28 10:08:30 : Scan Device Start
+2018/7/28 10:08:30 : COM34scan: MBED serial found
+2018/7/28 10:08:30 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:08:30 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:08:30 : Scan Device End
+2018/7/28 10:11:07 : >>>User click Scan device
+2018/7/28 10:11:07 : Scan Device Start
+2018/7/28 10:11:08 : COM34scan: MBED serial found
+2018/7/28 10:11:08 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:11:08 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:11:08 : Scan Device End
+2018/7/28 10:11:48 : User click fiwmware download
+2018/7/28 10:11:48 : COM34 download start
+2018/7/28 10:11:48 : COM34 CPU detected
+2018/7/28 10:11:50 : COM34 Boot OK
+2018/7/28 10:11:50 : COM34 Firmware read done
+2018/7/28 10:11:50 : COM34 Vendoer command ok
+2018/7/28 10:11:55 : exception: download fail, 操作已超时。
+2018/7/28 10:11:55 : COM34 worker: UART IO exception
+2018/7/28 10:11:55 : COM34 success cnt 0 fail cnt 1
+2018/7/28 10:17:58 : User click fiwmware download
+2018/7/28 10:17:58 : COM34 download start
+2018/7/28 10:17:58 : COM34 Cannot find CPUID
+2018/7/28 10:17:58 : COM34 success cnt 0 fail cnt 2
+2018/7/28 10:18:09 : User click fiwmware download
+2018/7/28 10:18:09 : COM34 download start
+2018/7/28 10:18:09 : COM34 CPU detected
+2018/7/28 10:18:10 : COM34 Boot OK
+2018/7/28 10:18:10 : COM34 Firmware read done
+2018/7/28 10:18:10 : COM34 Vendoer command ok
+2018/7/28 10:18:52 : COM34 Xmodem return
+2018/7/28 10:18:53 : COM34 worker: success
+2018/7/28 10:18:53 : COM34 success cnt 1 fail cnt 2
+2018/7/28 10:37:52 : User click fiwmware download
+2018/7/28 10:37:52 : COM34 download start
+2018/7/28 10:37:52 : COM34 CPU detected
+2018/7/28 10:37:53 : COM34 Boot OK
+2018/7/28 10:37:53 : COM34 Firmware read done
+2018/7/28 10:37:53 : COM34 Vendoer command ok
+2018/7/28 10:37:53 : COM34 Xmodem return
+2018/7/28 10:37:53 : COM34 worker: no sync, retry fail
+2018/7/28 10:37:53 : COM34 success cnt 1 fail cnt 3
+2018/7/28 10:38:08 : >>>User click Scan device
+2018/7/28 10:38:08 : Scan Device Start
+2018/7/28 10:38:08 : COM34scan: MBED serial found
+2018/7/28 10:38:08 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 10:38:08 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 10:38:08 : Scan Device End

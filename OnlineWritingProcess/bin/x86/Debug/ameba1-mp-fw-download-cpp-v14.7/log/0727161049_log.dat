@@ -1,0 +1,5 @@
+﻿2018/7/27 16:10:49 : Scan Device Start
+2018/7/27 16:10:50 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/27 16:10:50 : COM31scan: MBED serial found
+2018/7/27 16:10:50 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/27 16:10:50 : Scan Device End

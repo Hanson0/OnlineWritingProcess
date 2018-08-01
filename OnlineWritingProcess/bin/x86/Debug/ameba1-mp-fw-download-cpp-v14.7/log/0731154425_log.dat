@@ -1,0 +1,68 @@
+﻿2018/7/31 15:44:25 : Scan Device Start
+2018/7/31 15:44:25 : COM37scan: MBED serial found
+2018/7/31 15:44:25 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/31 15:44:25 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:44:25 : Scan Device End
+2018/7/31 15:44:47 : User click fiwmware download
+2018/7/31 15:44:47 : COM37 download start
+2018/7/31 15:44:47 : COM37 CPU detected
+2018/7/31 15:44:49 : COM37 Boot OK
+2018/7/31 15:44:49 : COM37 Firmware read done
+2018/7/31 15:44:49 : COM37 Vendoer command ok
+2018/7/31 15:44:54 : exception: download fail, 操作已超时。
+2018/7/31 15:44:54 : COM37 worker: UART IO exception
+2018/7/31 15:44:54 : COM37 success cnt 0 fail cnt 1
+2018/7/31 15:45:45 : User click fiwmware download
+2018/7/31 15:45:45 : COM37 download start
+2018/7/31 15:45:45 : COM37 CPU detected
+2018/7/31 15:45:47 : COM37 Boot OK
+2018/7/31 15:45:47 : COM37 Firmware read done
+2018/7/31 15:45:47 : COM37 Vendoer command ok
+2018/7/31 15:45:52 : exception: download fail, 操作已超时。
+2018/7/31 15:45:52 : COM37 worker: UART IO exception
+2018/7/31 15:45:52 : COM37 success cnt 0 fail cnt 2
+2018/7/31 15:53:56 : User click fiwmware download
+2018/7/31 15:53:56 : COM37 download start
+2018/7/31 15:53:56 : COM37 CPU detected
+2018/7/31 15:53:57 : COM37 Boot OK
+2018/7/31 15:53:57 : COM37 Firmware read done
+2018/7/31 15:53:57 : COM37 Vendoer command ok
+2018/7/31 15:54:35 : COM37 Xmodem return
+2018/7/31 15:54:36 : COM37 worker: success
+2018/7/31 15:54:36 : COM37 success cnt 1 fail cnt 2
+2018/7/31 15:55:11 : User click fiwmware download
+2018/7/31 15:55:11 : COM37 download start
+2018/7/31 15:55:11 : COM37 CPU detected
+2018/7/31 15:55:12 : COM37 Boot OK
+2018/7/31 15:55:12 : COM37 Firmware read done
+2018/7/31 15:55:12 : COM37 Vendoer command ok
+2018/7/31 15:55:17 : exception: download fail, 操作已超时。
+2018/7/31 15:55:17 : COM37 worker: UART IO exception
+2018/7/31 15:55:17 : COM37 success cnt 1 fail cnt 3
+2018/7/31 15:59:03 : USB Disk removed
+2018/7/31 15:59:04 : Scan Device Start
+2018/7/31 15:59:04 : exception: discard buffer, 端口被关闭。
+2018/7/31 15:59:04 : COM37scan: MBED serial found
+2018/7/31 15:59:04 : COM37scan: IO exception, 端口“COM37”不存在。
+2018/7/31 15:59:05 : COM37scan: IO exception, 端口“COM37”不存在。
+2018/7/31 15:59:05 : COM37scan: IO exception, 端口“COM37”不存在。
+2018/7/31 15:59:06 : Scanned: mbed Serial Port (COM37) v0.00 ID:--
+2018/7/31 15:59:06 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:59:06 : Scan Device End
+2018/7/31 15:59:06 : USB Disk removed
+2018/7/31 15:59:06 : USB Disk removed
+2018/7/31 15:59:07 : Scan Device Start
+2018/7/31 15:59:07 : exception: discard buffer, 端口被关闭。
+2018/7/31 15:59:07 : COM37scan: MBED serial found
+2018/7/31 15:59:07 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/31 15:59:07 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:59:08 : Scan Device End
+2018/7/31 15:59:09 : USB Disk inserted
+2018/7/31 15:59:09 : USB Disk inserted
+2018/7/31 15:59:09 : USB Disk inserted
+2018/7/31 15:59:09 : USB Disk inserted
+2018/7/31 15:59:10 : Scan Device Start
+2018/7/31 15:59:10 : COM37scan: MBED serial found
+2018/7/31 15:59:10 : Scanned: mbed Serial Port (COM37) v7.25 ID:2
+2018/7/31 15:59:10 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/31 15:59:10 : Scan Device End

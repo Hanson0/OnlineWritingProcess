@@ -1,0 +1,22 @@
+﻿2018/7/27 14:31:06 : Scan Device Start
+2018/7/27 14:31:06 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/27 14:31:06 : Scan Device End
+2018/7/27 14:31:11 : USB Disk inserted
+2018/7/27 14:31:11 : USB Disk inserted
+2018/7/27 14:31:11 : USB Disk inserted
+2018/7/27 14:31:11 : USB Disk inserted
+2018/7/27 14:31:12 : Scan Device Start
+2018/7/27 14:31:13 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/27 14:31:13 : COM31scan: MBED serial found
+2018/7/27 14:31:13 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/27 14:31:13 : Scan Device End
+2018/7/27 14:31:45 : Scan Device Start
+2018/7/27 14:31:46 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/27 14:31:46 : COM31scan: MBED serial found
+2018/7/27 14:31:46 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/27 14:31:46 : Scan Device End
+2018/7/27 14:31:51 : Scan Device Start
+2018/7/27 14:31:51 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/27 14:31:51 : COM31scan: MBED serial found
+2018/7/27 14:31:51 : Scanned: mbed Serial Port (COM31) v7.25 ID:2
+2018/7/27 14:31:51 : Scan Device End

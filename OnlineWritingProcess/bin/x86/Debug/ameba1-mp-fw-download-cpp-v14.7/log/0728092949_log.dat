@@ -1,0 +1,189 @@
+﻿2018/7/28 9:29:49 : Scan Device Start
+2018/7/28 9:29:50 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:29:50 : Scan Device End
+2018/7/28 9:29:52 : USB Disk inserted
+2018/7/28 9:29:53 : Scan Device Start
+2018/7/28 9:29:53 : COM34scan: MBED serial found
+2018/7/28 9:29:53 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:29:54 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:29:54 : Scan Device End
+2018/7/28 9:29:55 : USB Disk inserted
+2018/7/28 9:29:55 : USB Disk inserted
+2018/7/28 9:29:55 : USB Disk inserted
+2018/7/28 9:29:56 : Scan Device Start
+2018/7/28 9:29:56 : COM34scan: MBED serial found
+2018/7/28 9:29:56 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:29:56 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:29:57 : Scan Device End
+2018/7/28 9:30:00 : User click fiwmware download
+2018/7/28 9:30:07 : User click fiwmware download
+2018/7/28 9:30:07 : COM34 download start
+2018/7/28 9:30:07 : COM34 Cannot find CPUID
+2018/7/28 9:30:07 : COM34 success cnt 0 fail cnt 1
+2018/7/28 9:30:52 : USB Disk removed
+2018/7/28 9:30:52 : USB Disk removed
+2018/7/28 9:30:53 : Scan Device Start
+2018/7/28 9:30:54 : exception: discard buffer, 端口被关闭。
+2018/7/28 9:30:54 : COM34scan: MBED serial found
+2018/7/28 9:30:54 : COM34scan: IO exception, 端口“COM34”不存在。
+2018/7/28 9:30:54 : COM34scan: IO exception, 端口“COM34”不存在。
+2018/7/28 9:30:55 : COM34scan: IO exception, 端口“COM34”不存在。
+2018/7/28 9:30:55 : Scanned: mbed Serial Port (COM34) v0.00 ID:--
+2018/7/28 9:30:55 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:30:55 : Scan Device End
+2018/7/28 9:30:55 : USB Disk removed
+2018/7/28 9:30:56 : Scan Device Start
+2018/7/28 9:30:56 : exception: discard buffer, 端口被关闭。
+2018/7/28 9:30:57 : COM34scan: MBED serial found
+2018/7/28 9:30:57 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:30:57 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:30:57 : Scan Device End
+2018/7/28 9:30:58 : USB Disk inserted
+2018/7/28 9:30:58 : USB Disk inserted
+2018/7/28 9:30:58 : USB Disk inserted
+2018/7/28 9:30:59 : Scan Device Start
+2018/7/28 9:31:00 : COM34scan: MBED serial found
+2018/7/28 9:31:00 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:31:00 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:31:00 : Scan Device End
+2018/7/28 9:31:19 : User click fiwmware download
+2018/7/28 9:31:19 : COM34 download start
+2018/7/28 9:31:20 : COM34 Cannot find CPUID
+2018/7/28 9:31:20 : COM34 success cnt 0 fail cnt 1
+2018/7/28 9:32:31 : User click fiwmware download
+2018/7/28 9:32:31 : COM34 download start
+2018/7/28 9:32:31 : COM34 Cannot find CPUID
+2018/7/28 9:32:31 : COM34 success cnt 0 fail cnt 2
+2018/7/28 9:32:36 : User click fiwmware download
+2018/7/28 9:32:36 : COM34 download start
+2018/7/28 9:32:36 : COM34 Cannot find CPUID
+2018/7/28 9:32:36 : COM34 success cnt 0 fail cnt 3
+2018/7/28 9:32:58 : User click fiwmware download
+2018/7/28 9:32:58 : COM34 download start
+2018/7/28 9:32:58 : COM34 Cannot find CPUID
+2018/7/28 9:32:58 : COM34 success cnt 0 fail cnt 4
+2018/7/28 9:34:54 : User click fiwmware download
+2018/7/28 9:34:54 : COM34 download start
+2018/7/28 9:34:54 : COM34 Cannot find CPUID
+2018/7/28 9:34:54 : COM34 success cnt 0 fail cnt 5
+2018/7/28 9:36:11 : USB Disk removed
+2018/7/28 9:36:11 : USB Disk removed
+2018/7/28 9:36:12 : Scan Device Start
+2018/7/28 9:36:12 : COM34scan: MBED serial found
+2018/7/28 9:36:12 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:36:13 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:36:13 : Scan Device End
+2018/7/28 9:36:14 : USB Disk inserted
+2018/7/28 9:36:15 : Scan Device Start
+2018/7/28 9:36:16 : COM34scan: MBED serial found
+2018/7/28 9:36:16 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:36:16 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:36:16 : Scan Device End
+2018/7/28 9:36:17 : USB Disk removed
+2018/7/28 9:36:18 : Scan Device Start
+2018/7/28 9:36:19 : COM34scan: MBED serial found
+2018/7/28 9:36:19 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:36:19 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:36:19 : Scan Device End
+2018/7/28 9:36:20 : USB Disk inserted
+2018/7/28 9:36:21 : Scan Device Start
+2018/7/28 9:36:21 : COM34scan: MBED serial found
+2018/7/28 9:36:21 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:36:22 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:36:22 : Scan Device End
+2018/7/28 9:36:35 : USB Disk removed
+2018/7/28 9:36:35 : USB Disk removed
+2018/7/28 9:36:36 : Scan Device Start
+2018/7/28 9:36:36 : exception: discard buffer, 端口被关闭。
+2018/7/28 9:36:37 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:36:37 : Scan Device End
+2018/7/28 9:36:38 : USB Disk removed
+2018/7/28 9:36:38 : USB Disk removed
+2018/7/28 9:36:39 : Scan Device Start
+2018/7/28 9:36:40 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:36:40 : Scan Device End
+2018/7/28 9:37:54 : USB Disk inserted
+2018/7/28 9:37:54 : USB Disk inserted
+2018/7/28 9:37:54 : USB Disk inserted
+2018/7/28 9:37:54 : USB Disk inserted
+2018/7/28 9:37:55 : Scan Device Start
+2018/7/28 9:37:55 : COM34scan: MBED serial found
+2018/7/28 9:37:55 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:37:55 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:37:55 : Scan Device End
+2018/7/28 9:38:14 : User click fiwmware download
+2018/7/28 9:38:14 : COM34 download start
+2018/7/28 9:38:14 : COM34 Cannot find CPUID
+2018/7/28 9:38:14 : COM34 success cnt 0 fail cnt 1
+2018/7/28 9:39:51 : USB Disk removed
+2018/7/28 9:39:52 : Scan Device Start
+2018/7/28 9:39:52 : COM34scan: MBED serial found
+2018/7/28 9:39:52 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:39:52 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:39:52 : Scan Device End
+2018/7/28 9:47:04 : USB Disk inserted
+2018/7/28 9:47:05 : Scan Device Start
+2018/7/28 9:47:05 : COM34scan: MBED serial found
+2018/7/28 9:47:05 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:47:05 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:47:05 : Scan Device End
+2018/7/28 9:50:11 : USB Disk removed
+2018/7/28 9:50:12 : Scan Device Start
+2018/7/28 9:50:12 : COM34scan: MBED serial found
+2018/7/28 9:50:12 : Scanned: mbed Serial Port (COM34) v7.25 ID:2
+2018/7/28 9:50:12 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/7/28 9:50:12 : Scan Device End
+2018/7/28 9:51:32 : User click fiwmware download
+2018/7/28 9:51:32 : COM34 download start
+2018/7/28 9:51:32 : COM34 CPU detected
+2018/7/28 9:51:33 : COM34 Boot OK
+2018/7/28 9:51:33 : COM34 Firmware read done
+2018/7/28 9:51:33 : COM34 Vendoer command ok
+2018/7/28 9:52:14 : COM34 Xmodem return
+2018/7/28 9:52:15 : COM34 worker: download success, no checksum
+2018/7/28 9:52:15 : COM34 success cnt 1 fail cnt 0
+2018/7/28 9:57:38 : User click fiwmware download
+2018/7/28 9:57:38 : COM34 download start
+2018/7/28 9:57:38 : COM34 CPU detected
+2018/7/28 9:57:39 : COM34 Boot OK
+2018/7/28 9:57:39 : COM34 Firmware read done
+2018/7/28 9:57:39 : COM34 Vendoer command ok
+2018/7/28 9:57:44 : exception: download fail, 操作已超时。
+2018/7/28 9:57:44 : COM34 worker: UART IO exception
+2018/7/28 9:57:44 : COM34 success cnt 1 fail cnt 1
+2018/7/28 9:57:54 : User click fiwmware download
+2018/7/28 9:57:54 : COM34 download start
+2018/7/28 9:57:54 : COM34 CPU detected
+2018/7/28 9:57:56 : COM34 Boot OK
+2018/7/28 9:57:56 : COM34 Firmware read done
+2018/7/28 9:57:56 : COM34 Vendoer command ok
+2018/7/28 9:58:01 : exception: download fail, 操作已超时。
+2018/7/28 9:58:01 : COM34 worker: UART IO exception
+2018/7/28 9:58:01 : COM34 success cnt 1 fail cnt 2
+2018/7/28 9:58:18 : User click fiwmware download
+2018/7/28 9:58:18 : COM34 download start
+2018/7/28 9:58:19 : COM34 CPU detected
+2018/7/28 9:58:20 : COM34 Boot OK
+2018/7/28 9:58:20 : COM34 Firmware read done
+2018/7/28 9:58:20 : COM34 Vendoer command ok
+2018/7/28 9:58:25 : exception: download fail, 操作已超时。
+2018/7/28 9:58:25 : COM34 worker: UART IO exception
+2018/7/28 9:58:25 : COM34 success cnt 1 fail cnt 3
+2018/7/28 9:59:21 : User click fiwmware download
+2018/7/28 9:59:21 : COM34 download start
+2018/7/28 9:59:21 : COM34 CPU detected
+2018/7/28 9:59:22 : COM34 Boot OK
+2018/7/28 9:59:22 : COM34 Firmware read done
+2018/7/28 9:59:22 : COM34 Vendoer command ok
+2018/7/28 9:59:27 : exception: download fail, 操作已超时。
+2018/7/28 9:59:27 : COM34 worker: UART IO exception
+2018/7/28 9:59:27 : COM34 success cnt 1 fail cnt 4
+2018/7/28 9:59:34 : User click fiwmware download
+2018/7/28 9:59:34 : COM34 download start
+2018/7/28 9:59:34 : COM34 CPU detected
+2018/7/28 9:59:35 : COM34 Boot OK
+2018/7/28 9:59:35 : COM34 Firmware read done
+2018/7/28 9:59:35 : COM34 Vendoer command ok
+2018/7/28 9:59:40 : exception: download fail, 操作已超时。
+2018/7/28 9:59:40 : COM34 worker: UART IO exception
+2018/7/28 9:59:40 : COM34 success cnt 1 fail cnt 5
