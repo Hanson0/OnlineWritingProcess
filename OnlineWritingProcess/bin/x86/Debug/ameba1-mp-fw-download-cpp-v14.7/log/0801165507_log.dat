@@ -1,0 +1,8 @@
+﻿2018/8/1 16:55:07 : Scan Device Start
+2018/8/1 16:55:07 : COM30scan: MBED serial found
+2018/8/1 16:55:07 : COM30scan: IO exception, 端口“COM30”不存在。
+2018/8/1 16:55:07 : COM30scan: IO exception, 端口“COM30”不存在。
+2018/8/1 16:55:08 : COM30scan: IO exception, 端口“COM30”不存在。
+2018/8/1 16:55:08 : Scanned: mbed Serial Port (COM30) v0.00 ID:--
+2018/8/1 16:55:08 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/8/1 16:55:09 : Scan Device End

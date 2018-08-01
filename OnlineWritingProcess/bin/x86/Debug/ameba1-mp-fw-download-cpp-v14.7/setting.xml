@@ -4,7 +4,7 @@
   <RESET>False</RESET>
   <UARTSET>2</UARTSET>
   <CHECKSUM>True</CHECKSUM>
-  <FIRMWARE>C:\Users\ZJH\Desktop\Composite_Boot_App_HaierAC_Prod_v0_0_6_30.bin</FIRMWARE>
+  <FIRMWARE>E:\2_工作和软件\1_工作存档\01长虹爱联\海尔GE项目在线写程\1_工程源码\OnlineWritingProcess\OnlineWritingProcess\bin\x86\Debug\BinFile\237669683672912_D828C911B750.bin</FIRMWARE>
   <FACTORY>False</FACTORY>
   <FACTORYTYPE>0</FACTORYTYPE>
   <ERASESECTORSTART>0x00000000</ERASESECTORSTART>

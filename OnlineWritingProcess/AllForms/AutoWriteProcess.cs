@@ -14,6 +14,7 @@ using System.Threading;
 using System.IO.Ports;
 using System.IO;
 using DownLoad;
+using System.Text.RegularExpressions;
 
 namespace OnlineWritingProcess
 {
@@ -778,168 +779,184 @@ namespace OnlineWritingProcess
 
         private void textMac_TextChanged(object sender, EventArgs e)
         {
-
             if (textMac.Text.Length > 11)
             {
-                try
+
+                //正则表达式
+                if (Regex.IsMatch(textMac.Text, "^[0-9a-zA-Z]{12}$"))//@"(\d{15})[,，]{1}(\w{15})"
                 {
-                    //清空历史数据
-                    textLog.Text = "";
-                    textLog.BackColor = Color.White;
-                    if (selectPictureBox!=null)
+                    #region 根据所选下载，更新，写程
+                    try
                     {
-                        selectPictureBox.Image = Properties.Resources.白圆点;
-                    }
-
-
-                    splashScreenManager1.ShowWaitForm();
-                    splashScreenManager1.SetWaitFormCaption("下载并写程中");
-                    splashScreenManager1.SetWaitFormDescription("请稍后...");
-
-                    #region 下载写程
-                    string checkName = "";
-                    int Ret = -1;
-                    List<string> deviceList;
-
-                    #region 根据所勾选的radiobox，寻找到对应行的 progressbar,picturebox
-                    foreach (var item in panelControl3.Controls)
-                    {
-                        if (item is CheckEdit)
+                        //清空历史数据
+                        textLog.Text = "";
+                        textLog.BackColor = Color.White;
+                        if (selectPictureBox != null)
                         {
-                            CheckEdit b = (CheckEdit)item;
-                            if (b.Checked)
-                            {
-                                hasSelectCom = true;
-                                checkName = b.Name;
-                                int startIndex = b.Text.IndexOf('M');
-                                int endIndex = b.Text.IndexOf(':');
-                                //得COM几
-                                comValue = b.Text.Substring(startIndex + 1, endIndex - startIndex - 1);
-                                checkName = checkName.Substring(checkName.Length - 1, 1);
+                            selectPictureBox.Image = Properties.Resources.白圆点;
+                        }
 
-                                //ProgressBar+i
-                                string progressBarName = "progressBar" + checkName;
-                                foreach (var control in panelControl3.Controls)
+
+                        splashScreenManager1.ShowWaitForm();
+                        splashScreenManager1.SetWaitFormCaption("下载并写程中");
+                        splashScreenManager1.SetWaitFormDescription("请稍后...");
+
+                        #region 下载写程
+                        string checkName = "";
+                        int Ret = -1;
+                        List<string> deviceList;
+
+                        #region 根据所勾选的radiobox，寻找到对应行的 progressbar,picturebox
+                        foreach (var item in panelControl3.Controls)
+                        {
+                            if (item is CheckEdit)
+                            {
+                                CheckEdit b = (CheckEdit)item;
+                                if (b.Checked)
                                 {
-                                    if (control is System.Windows.Forms.ProgressBar)
+                                    hasSelectCom = true;
+                                    checkName = b.Name;
+                                    int startIndex = b.Text.IndexOf('M');
+                                    int endIndex = b.Text.IndexOf(':');
+                                    //得COM几
+                                    comValue = b.Text.Substring(startIndex + 1, endIndex - startIndex - 1);
+                                    checkName = checkName.Substring(checkName.Length - 1, 1);
+
+                                    //ProgressBar+i
+                                    string progressBarName = "progressBar" + checkName;
+                                    foreach (var control in panelControl3.Controls)
                                     {
-                                        //得到selectProgressBar
-                                        selectProgressBar = (System.Windows.Forms.ProgressBar)control;
-                                        if (selectProgressBar.Name == progressBarName)
+                                        if (control is System.Windows.Forms.ProgressBar)
                                         {
-                                            selectProgressBar.Value = 0;
-                                            //addValue = true;
-                                            //Thread progresThread = new Thread(new ParameterizedThreadStart(proThread));
-                                            //progresThread.IsBackground = false;
-                                            //progresThread.Start((object)selectProgressBar);
+                                            //得到selectProgressBar
+                                            selectProgressBar = (System.Windows.Forms.ProgressBar)control;
+                                            if (selectProgressBar.Name == progressBarName)
+                                            {
+                                                selectProgressBar.Value = 0;
+                                                //addValue = true;
+                                                //Thread progresThread = new Thread(new ParameterizedThreadStart(proThread));
+                                                //progresThread.IsBackground = false;
+                                                //progresThread.Start((object)selectProgressBar);
+                                            }
                                         }
                                     }
-                                }
 
-                                //"picture" + i
-                                foreach (var control in panelControl3.Controls)
-                                {
-                                    if (control is PictureBox)
+                                    //"picture" + i
+                                    foreach (var control in panelControl3.Controls)
                                     {
-                                        //得到selectProgressBar
-                                        selectPictureBox = (PictureBox)control;
+                                        if (control is PictureBox)
+                                        {
+                                            //得到selectProgressBar
+                                            selectPictureBox = (PictureBox)control;
+                                        }
                                     }
+
+
                                 }
-
-
                             }
                         }
-                    }
-                    #endregion
-                    if (!hasSelectCom)
-                    {
-                        XtraMessageBox.Show("请选择烧录的COM口");
-                        goto END;
-                    }
-                    hasSelectCom = false;
-                    StartSearchDev = false;
+                        #endregion
+                        if (!hasSelectCom)
+                        {
+                            XtraMessageBox.Show("请选择烧录的COM口");
+                            goto END;
+                        }
+                        hasSelectCom = false;
+                        StartSearchDev = false;
 
-                    //根据MAC号,下载bin文件
-                    //string urlDownload = url+textMac.Text;
-                    string binPath;
-                    bool result = update(string.Format(macUrl,strIp,textMac.Text) , strBinPath, out binPath);//"http://down10.zol.com.cn/xiazai/utorrentv3.5.0.44246.b.zip"
-                    if (!result)
-                    {
-                        PutResult(false, "bin文件下载失败");
-                        goto END;
-                    }
-                    //设置bin文件路径
-                    //string binPath=strBinPath+fileName+
-                    Ret = SendCmd((int)readCmd.WriteCmd, FirmwarePathSet, "FIRMWARE", out deviceList, false, binPath);// @"C:\Users\ZJH\Desktop\237669683672908_D828C911B74C.bin"
-                    if (Ret != 0)
-                    {
-                        PutResult(false, "MAC:" + textMac.Text + "  cmd获取bin文件路径失败");
+                        //根据MAC号,下载bin文件
+                        //string urlDownload = url+textMac.Text;
+                        string binPath;
+                        string msg;
+                        bool result = update(string.Format(macUrl, strIp, textMac.Text), strBinPath, out binPath, out msg);//"http://down10.zol.com.cn/xiazai/utorrentv3.5.0.44246.b.zip"
+                        if (!result)
+                        {
+                            PutResult(false, msg + "bin文件下载失败");
+                            goto END;
+                        }
+                        //设置bin文件路径
+                        //string binPath=strBinPath+fileName+
+                        Ret = SendCmd((int)readCmd.WriteCmd, FirmwarePathSet, "FIRMWARE", out deviceList, false, binPath);// @"C:\Users\ZJH\Desktop\237669683672908_D828C911B74C.bin"
+                        if (Ret != 0)
+                        {
+                            PutResult(false, "MAC:" + textMac.Text + "  cmd获取bin文件路径失败");
+                            textMac.Text = "";
+                            addValue = false;//processbar持续增长
+                            goto END;
+                        }
+                        //计算cheksum并显示
+                        Thread.Sleep(500);
+                        Ret = SendCmd((int)readCmd.ReadCmd, CheckSumValueRead, "", out deviceList, true);
+                        if (Ret != 0)
+                        {
+                            XtraMessageBox.Show("获取checksum校验失败");
+                            textMac.Text = "";
+                            addValue = false;//processbar持续增长
+                            goto END;
+                        }
+                        labChecksumValue.Text = deviceList[0];
+
+                        ////设置offset、reset、uart、checkSum
+                        //SaveConfigValue(true);
+
+                        //程序烧录
+                        Thread.Sleep(500);
+                        Ret = SendCmd((int)readCmd.WriteCmd, DownloadSome, "COM", out deviceList, false, comValue);
+                        if (Ret != 0)
+                        {
+                            PutResult(false, "MAC:" + textMac.Text + "  程序烧录cmd命令失败");
+                            selectPictureBox.Image = Properties.Resources.红色圆;
+                            textMac.Text = "";
+                            addValue = false;
+                            goto END;
+                        }
+                        if (deviceList[0].Contains("fail"))
+                        {
+                            //progressBar
+                            selectPictureBox.Image = Properties.Resources.红色圆;
+
+                            PutResult(false, "MAC:" + textMac.Text + "  写程失败");
+                        }
+                        else if (deviceList[0].Contains("success"))
+                        {
+                            selectProgressBar.Value = 100;
+                            selectPictureBox.Image = Properties.Resources.绿色小圆;
+                            PutResult(true, "MAC:" + textMac.Text + "   写程成功");
+
+                        }
+                        #endregion
+                    END:
+
+                        addValue = false;//processbar增加值
+                        StartSearchDev = true;
                         textMac.Text = "";
-                        addValue = false;//processbar持续增长
-                        goto END;
-                    }
-                    //计算cheksum并显示
-                    Thread.Sleep(500);
-                    Ret = SendCmd((int)readCmd.ReadCmd, CheckSumValueRead, "", out deviceList, true);
-                    if (Ret != 0)
-                    {
-                        XtraMessageBox.Show("获取checksum校验失败");
-                        textMac.Text = "";
-                        addValue = false;//processbar持续增长
-                        goto END;
-                    }
-                    labChecksumValue.Text = deviceList[0];
-
-                    ////设置offset、reset、uart、checkSum
-                    //SaveConfigValue(true);
-
-                    //程序烧录
-                    Thread.Sleep(500);
-                    Ret = SendCmd((int)readCmd.WriteCmd, DownloadSome, "COM", out deviceList, false, comValue);
-                    if (Ret != 0)
-                    {
-                        PutResult(false, "MAC:" + textMac.Text + "  程序烧录cmd命令失败");
-                        selectPictureBox.Image = Properties.Resources.红色圆;
-                        textMac.Text = "";
-                        addValue = false;
-                        goto END;
-                    }
-                    if (deviceList[0].Contains("fail"))
-                    {
-                        //progressBar
-                        selectPictureBox.Image = Properties.Resources.红色圆;
-
-                        PutResult(false, "MAC:" + textMac.Text + "  程序烧录失败");
-                    }
-                    else if (deviceList[0].Contains("success"))
-                    {
-                        selectProgressBar.Value = 100;
-                        selectPictureBox.Image = Properties.Resources.绿色小圆;
-                        PutResult(true, "MAC:" + textMac.Text + "  程序烧录成功");
-
-                    }
-                    #endregion
-                END:
-
-                    addValue = false;//processbar增加值
-                    StartSearchDev = true;
-                    textMac.Text = "";
-                    if (selectProgressBar != null)
-                    {
-                        selectProgressBar.Value = 0;
-                    }
+                        if (selectProgressBar != null)
+                        {
+                            selectProgressBar.Value = 0;
+                        }
 
                         splashScreenManager1.CloseWaitForm();
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show(ex.Message);
+                    }
+                    #endregion
                 }
-                catch (Exception ex)
+                else
                 {
-                    XtraMessageBox.Show(ex.Message);
+                    PutResult(false, "MAC:" + textMac.Text + "   不合法", false);
                 }
+                //最后
+                textMac.Text = "";
+
             }
+
+            
 
 
         }
-        private bool update(string url, string path,out string  proFile)
+        private bool update(string url, string path,out string  proFile,out string msg)
         {
             bool flag=false;
             httpDown downloader = new httpDown();
@@ -948,7 +965,7 @@ namespace OnlineWritingProcess
             downloader.ctr3 = label3;
             downloader.progressBar = selectProgressBar;
             //开始下载
-            flag = downloader.HttpDownload(url, path);
+            flag = downloader.HttpDownload(url, path,out msg);
             //下载结束
             Thread.Sleep(100);
             proFile = downloader.ProFile;
@@ -1034,6 +1051,71 @@ namespace OnlineWritingProcess
                 WritePassResult(textMac.Text, textLog.Text, strLogPath, false);
             }
         }
+        public void PutResult(bool result, string log, bool isWriteToRet)
+        {
+            string logStr;
+
+            if (result)
+            {
+                iPass++;
+                logStr = "\r\n";
+                logStr += "########     ###     ######   ######\r\n";
+                logStr += "##     ##   ## ##   ##    ## ##    ##\r\n";
+                logStr += "##     ##  ##   ##  ##       ##\r\n";
+                logStr += "########  ##     ##  ######   ######\r\n";
+                logStr += "##        #########       ##       ##\r\n";
+                logStr += "##        ##     ## ##    ## ##    ##\r\n";
+                logStr += "##        ##     ##  ######   ######\r\n";
+                textLog.Text = logStr;
+                textLog.Text += "====================================\r\n";
+                textLog.Text += "====================================\r\n";
+                textLog.Text += "LOG\r\n";
+                textLog.Text += log;
+                textLog.BackColor = Color.Green;
+
+                if (isWriteToRet)
+                {
+                    //结果显示： 
+                    textPass.Text = iPass.ToString();
+                    Win32API.WritePrivateProfileString("Result", "Pass", iPass.ToString(), configPath);
+                    textTotal.Text = (iPass + iFail).ToString();
+                    textRate.Text = Math.Round((double)iPass * 100 / (iPass + iFail), 2).ToString() + "%";
+
+                    WritePassResult(textMac.Text, textLog.Text, strLogPath, true);
+                }
+            }
+            else
+            {
+                iFail++;
+                logStr = "\r\n";
+                logStr += "########    ###     ####  ##\r\n";
+                logStr += "##         ## ##     ##   ##\r\n";
+                logStr += "##        ##   ##    ##   ##\r\n";
+                logStr += "######   ##     ##   ##   ##\r\n";
+                logStr += "##       #########   ##   ##\r\n";
+                logStr += "##       ##     ##   ##   ##\r\n";
+                logStr += "##       ##     ##  ####  ########\r\n";
+
+                textLog.Text = logStr;
+                textLog.Text += "====================================\r\n";
+                textLog.Text += "====================================\r\n";
+                textLog.Text += "LOG\r\n";
+                textLog.Text += log;
+                textLog.BackColor = Color.Red;
+
+                if (isWriteToRet)
+                {
+                    //结果显示： 
+                    textFail.Text = iFail.ToString();
+                    Win32API.WritePrivateProfileString("Result", "Fail", iFail.ToString(), configPath);
+                    textTotal.Text = (iPass + iFail).ToString();
+                    textRate.Text = Math.Round((double)iPass * 100 / (iPass + iFail), 2).ToString() + "%";
+
+                    WritePassResult(textMac.Text, textLog.Text, strLogPath, false);
+                }
+            }
+        }
+
         public void WritePassResult(string Sn, string content, string path, bool IsPassOrFail)
         {
             string strTempName = null;

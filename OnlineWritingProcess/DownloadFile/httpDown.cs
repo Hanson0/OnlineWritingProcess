@@ -9,6 +9,7 @@ using System.DelegateUI;
 using FactoryAuto;
 using System.Threading;
 using OnlineWritingProcess;
+using Newtonsoft.Json;
 
 namespace DownLoad
 {
@@ -30,15 +31,16 @@ namespace DownLoad
         /// <param name="url">下载文件地址</param>
         /// <param name="path">文件存放地址，包含文件名</param>
         /// <returns></returns>
-        public bool HttpDownload(string url, string path)
+        public bool HttpDownload(string url, string path,out string msg)
         {
+            msg = "";
             string tempPath = path;
             //Directory.CreateDirectory(tempPath);                                      //创建临时文件目录
             string ss = url.Split('=').Last();
 
             string tempFile = string.Format("{0}{1}.{2}", tempPath, ss, "temp");   //临时文件
 
-            ProFile = string.Format("{0}\\{1}", tempPath, ss);
+            ProFile = tempFile.Replace(".temp",".bin");// string.Format("{0}{1}", tempPath, ss);
 
             if (System.IO.File.Exists(tempFile))
             {
@@ -54,17 +56,58 @@ namespace DownLoad
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
                 //直到request.GetResponse()程序才开始向目标网页发送Post请求
                 Stream responseStream = response.GetResponseStream();
+
+
                 int contentLenth;
                 contentLenth = (int)(response.ContentLength / 1024);
+
+                string headers = response.Headers.ToString();
+                if (!headers.Contains("filename"))
+                {
+                    using (StreamReader streamReader = new StreamReader(responseStream, Encoding.UTF8))
+                    {
+                        string httpRespose = streamReader.ReadToEnd();
+                        int start = httpRespose.IndexOf("{");
+                        int end = httpRespose.LastIndexOf("}");
+                        int length = end - start + 1;
+                        httpRespose = httpRespose.Substring(start, length);
+
+                        ResponseInfo responseInfo = JsonConvert.DeserializeObject(httpRespose, typeof(ResponseInfo)) as ResponseInfo;
+                        if (responseInfo.code == -1)
+                        {
+                            msg = responseInfo.msg + "\r\n";
+                            return false;
+                        }
+                    }
+                }
+                int startIndex = headers.IndexOf('=');
+                int endIndex = headers.IndexOf("\r\n");
+                string fileName = headers.Substring(startIndex + 1, endIndex - startIndex-1).Replace("\"","");
                 
+                ProFile = ProFile.Replace(ss+".bin", fileName);
+                contentLenth = 20;/*每个bin文件都是20K*/
+
                 UIDelegate.setMaxUIControl(progressBar, contentLenth);//最大的基础上再加40
 
-
-
-                //updateUI = delegate
+                //if (response.ContentLength<1)
                 //{
-                //    progressBar.
-                //};
+                //    using (StreamReader streamReader = new StreamReader(responseStream, Encoding.UTF8))
+                //    {
+                //        string httpRespose = streamReader.ReadToEnd();
+                //        int start = httpRespose.IndexOf("{");
+                //        int end = httpRespose.LastIndexOf("}");
+                //        int length = end - start + 1;
+                //        httpRespose = httpRespose.Substring(start, length);
+
+                //        ResponseInfo responseInfo = JsonConvert.DeserializeObject(httpRespose, typeof(ResponseInfo)) as ResponseInfo;
+                //        if (responseInfo.code == -1)
+                //        {
+                //            msg = responseInfo.msg + "\r\n";
+                //            return false;
+                //        }
+                //    }
+                //}
+
 
                 //创建本地文件写入流
                 //Stream stream = new FileStream(tempFile, FileMode.Create);
@@ -84,7 +127,7 @@ namespace DownLoad
                     size = responseStream.Read(bArr, 0, (int)bArr.Length);
                     sizeAll += size;
                     sizeAll_kb = (int)(sizeAll / 1024);
-                    percent_kb = (int)(((float)sizeAll_kb / contentLenth) * 101);
+                    percent_kb = (int)(((float)sizeAll_kb / contentLenth) * 100);
                     testTime = stopWatch.getTotoleSeconds();
                     downLoadSpeed = testTime > 0 ? (int)((float)sizeAll_kb / testTime) : 0;
 
@@ -108,11 +151,14 @@ namespace DownLoad
                     AutoWriteProcess.autoWriteForm.label2.Update();
                     AutoWriteProcess.autoWriteForm.label3.Text = string.Format("已下载  {0}  kB", sizeAll_kb);
                     AutoWriteProcess.autoWriteForm.label3.Update();
-
-                    UIDelegate.setValueUIControl(progressBar, sizeAll_kb);//在线程中不会出现显示不完的现象
+                    if (sizeAll_kb<=contentLenth)
+                    {
+                        UIDelegate.setValueUIControl(progressBar, sizeAll_kb);//在线程中不会出现显示不完的现象
+                    }
                     Thread.Sleep(0);
                 }
                 stopWatch.Stop();
+
                 //stream.Close();
                 #endregion
                 fs.Close();
@@ -123,7 +169,7 @@ namespace DownLoad
                 }
                 try
                 {
-                    System.IO.File.Move(tempFile, tempFile.Replace(".temp", ""));
+                    System.IO.File.Move(tempFile, ProFile);
 
                 }
                 catch (Exception ex)
@@ -140,6 +186,15 @@ namespace DownLoad
             
         }
     }
+
+    [Serializable]
+    class ResponseInfo
+    {
+        public int code { get; set; }
+        public string msg { get; set; }
+        public string data { get; set; }
+    }
+
 }
 
 

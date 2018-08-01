@@ -1,0 +1,13 @@
+﻿2018/8/1 15:59:41 : Scan Device Start
+2018/8/1 15:59:41 : COM30scan: MBED serial found
+2018/8/1 15:59:42 : Scanned: mbed Serial Port (COM30) v7.25 ID:2
+2018/8/1 15:59:42 : exception: Error when scan, 未将对象引用设置到对象的实例。
+2018/8/1 15:59:42 : Scan Device End
+2018/8/1 15:59:42 : User click fiwmware download
+2018/8/1 15:59:42 : COM30 download start
+2018/8/1 15:59:42 : COM30 CPU detected
+2018/8/1 15:59:43 : COM30 Boot OK
+2018/8/1 15:59:43 : COM30 Firmware read done
+2018/8/1 15:59:43 : COM30 Vendoer command ok
+2018/8/1 15:59:48 : exception: download fail, 操作已超时。
+2018/8/1 15:59:48 : COM30 download fail: 2
